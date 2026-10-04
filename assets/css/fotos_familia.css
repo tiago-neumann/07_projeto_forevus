@@ -1,0 +1,47 @@
+
+.bloco_foto{
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 3px solid var(--cor-borda);
+}
+
+.bloco_foto img{
+    display: block;
+
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+
+    filter: blur(4px);
+}
+
+.bloco_foto::after{
+    content: "";
+    position: absolute;
+    inset: 40% 0 0 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0)
+    );
+    pointer-events: none;
+}
+
+.bloco_foto span {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    transform: translate(-50%, 50%);
+    bottom: 50%;
+    left: 50%;
+    z-index: 1;
+
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 0 0 10px black;
+
+    width: 100%;
+}

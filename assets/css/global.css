@@ -45,16 +45,9 @@ body{
 
 main{
     padding-top: 90px;
-    margin: 5px;
-
-    gap: 10px;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-template-rows: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, span {
   font-family: var(--fonte-titulo);
 }
 
@@ -159,7 +152,7 @@ small{
     object-fit: cover;
 
     border-radius: 50%;
-    border: 4px solid var(--cor-borda);
+    border: 3px solid var(--cor-borda);
 
     box-shadow: var(--sombra-suave);
 
@@ -170,7 +163,7 @@ small{
 
 .conta img:hover{
     transform: scale(1.1);
-    border: 4px solid var(--cor-foco);
+    border: 3px solid var(--cor-foco);
     box-shadow: var(--sombra-forte);
 }
 
